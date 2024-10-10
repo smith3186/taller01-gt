@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="C:/Users/smith/IdeaProjects/galaxytrainer/taller01-gt/seleniumtaller1(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="loginfallidoTest2"/>
+          <include name="loginsinemailTest4"/>
+          <include name="logincredencialesblancoTest3"/>
+          <include name="setup"/>
+          <include name="loginolvidoclaveTest5"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- C:/Users/smith/IdeaProjects/galaxytrainer/taller01-gt/seleniumtaller1(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
