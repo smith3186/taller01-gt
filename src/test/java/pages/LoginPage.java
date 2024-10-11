@@ -14,7 +14,8 @@ public class LoginPage extends BaseTest {
 
     //contructor
     public LoginPage(WebDriver driver) {
-        super();
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
 
     }
 
@@ -39,10 +40,6 @@ public class LoginPage extends BaseTest {
 
 
     //Actions methods
-    public void clickLogin() {
-        loginButton.click();
-    }
-
     public void setEmail(String email) {
         emailField.sendKeys(email);
     }

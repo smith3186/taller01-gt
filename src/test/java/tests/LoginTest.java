@@ -8,41 +8,44 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.LoginPage;
+import utils.BaseTest;
 import utils.Variables;
 
 import java.time.Duration;
 
-public class LoginTest {
+public class LoginTest extends BaseTest {
 
     @Test(groups = {"Regression", "Integration"})
     @Description("TC-Login-01")
-    public void loginexitosolTest() {
-
-
+    public void loginexitosolT1() {
+        homePage.clickLogin();
+        loginPage.setEmail("fekey45124@paxnw.com");
+        loginPage.setPassword("4c3#x5GtXDGruJG");
+        loginPage.clickSubmitButton();
     }
 
     @Test(groups = {"Functional"})
     @Description("TC-Login-02")
-    public void loginfallidoTest2() {
+    public void loginfallidoT2() {
 
     }
 
     @Test(groups = {"Functional"})
     @Description("TC-Login-03")
-    public void logincredencialesblancoTest3() {
+    public void logincredencialesblancoT3() {
 
     }
 
 
     @Test(groups = {"Regression"})
     @Description("TC-Login-04")
-    public void loginsinemailTest4() {
+    public void loginsinemailT4() {
 
     }
 
     @Test(groups = {"Functional", "Integration"})
     @Description("TC-Login-05")
-    public void loginolvidoclaveTest5() {
+    public void loginolvidoclaveT5() {
 
     }
 

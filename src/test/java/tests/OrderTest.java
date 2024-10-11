@@ -7,26 +7,26 @@ public class OrderTest {
 
     @Test(groups = {"Regression"})
     @Description("TC-Order-01")
-    public void ordenagregarproducto() {
+    public void ordenagregarproductoT1() {
 
     }
 
     @Test(groups = {"Regression"})
     @Description("TC-Order-02")
-    public void ordeneliminarproducto() {
+    public void ordeneliminarproductoT2() {
 
     }
 
     @Test(groups = {"Functional", "Integration"})
     @Description("TC-Order-03")
-    public void ordenmodificarcantidadproducto() {
+    public void ordenmodificarcantidadproductoT3() {
 
     }
 
 
     @Test(groups = {"Regression"})
     @Description("TC-Order-04")
-    public void ordencrearnuevo() {
+    public void ordencrearnuevoT4() {
 
     }
 
