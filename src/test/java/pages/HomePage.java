@@ -14,7 +14,6 @@ public class HomePage extends BaseTest {
         this.driver = driver;
         PageFactory.initElements(driver, this);
 
-
     }
 
     //locators
@@ -33,7 +32,6 @@ public class HomePage extends BaseTest {
     public void clickRegister() {
         loginButton.click();
     }
-
 
 
 }

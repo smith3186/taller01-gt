@@ -3,7 +3,9 @@ package utils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.OrderPage;
@@ -20,7 +22,7 @@ public class BaseTest {
     protected OrderPage orderPage;
     protected RegisterPage registerPage;
 
-    @BeforeClass
+    @BeforeMethod
     public void setup() {
         driver = new FirefoxDriver();
         driver.get(Variables.baseUrl);
@@ -32,11 +34,9 @@ public class BaseTest {
         orderPage = new OrderPage(driver);
         registerPage = new RegisterPage(driver);
 
-
-
     }
 
-    @AfterClass
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();

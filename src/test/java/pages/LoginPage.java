@@ -26,6 +26,9 @@ public class LoginPage extends BaseTest {
     @FindBy(id = "email")
     WebElement emailField;
 
+    @FindBy(id = "email_address")
+    WebElement emailadressField;
+
     @FindBy(id = "pass")
     WebElement passwordField;
 
@@ -38,10 +41,26 @@ public class LoginPage extends BaseTest {
     @FindBy(xpath = "//*[@id=\"maincontent\"]/div[2]/div[2]/div/div/div")
     WebElement messageerror;
 
+    @FindBy(id = "email-error")
+    WebElement emailerror;
+
+    @FindBy(id = "pass-error")
+    WebElement passerror;
+
+    @FindBy(xpath = "//*[@id=\"login-form\"]/fieldset/div[4]/div[2]/a/span")
+    WebElement forgotpass;
+
+    @FindBy(xpath = "//*[@id=\"form-validate\"]/div/div[1]/button")
+    WebElement resetmyPass;
+
 
     //Actions methods
     public void setEmail(String email) {
         emailField.sendKeys(email);
+    }
+
+    public void setEmailAdress(String email) {
+        emailadressField.sendKeys(email);
     }
 
     public void setPassword(String password) {
@@ -60,6 +79,21 @@ public class LoginPage extends BaseTest {
         return messageerror.getText();
     }
 
+    public String getEmailError() {
+        return emailerror.getText();
+    }
+
+    public String getPassError() {
+        return passerror.getText();
+    }
+
+    public void clickForgotPass() {
+        forgotpass.click();
+    }
+
+    public void clickResetMyPass() {
+        resetmyPass.click();
+    }
 
 
 }
