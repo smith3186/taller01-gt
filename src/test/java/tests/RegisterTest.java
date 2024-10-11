@@ -1,5 +1,6 @@
 package tests;
 
+import jdk.jfr.Description;
 import org.testng.annotations.Test;
 
 public class RegisterTest {
@@ -7,32 +8,39 @@ public class RegisterTest {
 
     public class RegisterPage {
 
-        @Test
+        @Test(groups = {"Functional"})
+        @Description("TC-Register-01")
         public void registroexitoso() {
 
         }
 
-        @Test
+
+        @Test(groups = {"Functional", "Integration"})
+        @Description("TC-Register-02")
         public void registrocamposfaltantes() {
 
         }
 
-        @Test
+        @Test(groups = {"Functional", "Regression"})
+        @Description("TC-Register-03")
         public void registroformatocorreoerrado() {
 
         }
 
-        @Test
+        @Test(groups = {"Regression"})
+        @Description("TC-Register-04")
         public void registroclavesegura() {
 
         }
 
-        @Test
+        @Test(groups = {"Functional", "Integration"})
+        @Description("TC-Register-05")
         public void registroconfirmacionclave() {
 
         }
 
-        @Test
+        @Test(groups = {"Integration"})
+        @Description("TC-Register-06")
         public void registrocorreounico() {
 
         }

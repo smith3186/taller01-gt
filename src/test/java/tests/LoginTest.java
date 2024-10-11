@@ -14,33 +14,33 @@ import java.time.Duration;
 
 public class LoginTest {
 
-    @Test(priority = 1)
+    @Test(groups = {"Regression", "Integration"})
     @Description("TC-Login-01")
     public void loginexitosolTest() {
 
 
     }
 
-    @Test(priority = 2)
+    @Test(groups = {"Functional"})
     @Description("TC-Login-02")
     public void loginfallidoTest2() {
 
     }
 
-    @Test(priority = 3)
+    @Test(groups = {"Functional"})
     @Description("TC-Login-03")
     public void logincredencialesblancoTest3() {
 
     }
 
 
-    @Test(priority = 4)
+    @Test(groups = {"Regression"})
     @Description("TC-Login-04")
     public void loginsinemailTest4() {
 
     }
 
-    @Test(priority = 5)
+    @Test(groups = {"Functional", "Integration"})
     @Description("TC-Login-05")
     public void loginolvidoclaveTest5() {
 
