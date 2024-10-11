@@ -39,7 +39,5 @@
             <version>2.24.0</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
 </project>
